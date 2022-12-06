@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --white: rgb(255, 255, 255);
+  --green-100: rgb(1, 184, 41);
+  --green-200: rgb(34, 61, 52);
+  --green-300: rgb(19, 46, 31);
+  --gray: rgb(25, 34, 31);
+  --orange: rgb(235, 84, 28);
+  --red: rgb(193, 7, 10);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  line-height: 1.66;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  font-family: Roboto, sans-serif;
+  color: var(--white);
+  background-color: var(--green-200);
+}
+
+.page {
+  padding: 1rem 0;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.title {
+  font-size: 2.25rem;
+  text-align: center;
+}
+
+.text-error {
+  color: var(--red);
+  text-align: center;
+  font-weight: 500;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 820px) {
+  body {
+    font-size: 1.75rem;
+  }
+
+  .container {
+    max-width: 800px;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,86 @@
+table {
+  max-width: 100%;
+  border-spacing: 5px;
+}
+
+.header {
+  padding: 3px 10px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.1rem;
+  background-color: var(--gray);
+}
+
+.header--success {
+  background-color: var(--green-100);
+}
+
+.header--warning {
+  background-color: var(--orange);
+}
+
+.header--danger {
+  background-color: var(--red);
+}
+
+table > tbody > tr.row:hover td {
+  cursor: pointer;
+  background-color: #ff4444;
+}
+
+.d-col {
+  background-color: var(--green-300);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.d-col--center {
+  padding: 3px 5px;
+  text-align: center;
+}
+
+.d-col-country {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 3px;
+}
+
+.d-col-country-name {
+  display: none;
+}
+
+.d-col--success {
+  background-color: var(--green-100);
+}
+
+.d-col--warning {
+  background-color: var(--orange);
+}
+
+.d-col--danger {
+  background-color: var(--red);
+}
+
+@media only screen and (min-width: 820px) {
+  .d-col-country {
+    justify-content: flex-start;
+  }
+
+  .d-col-country-name {
+    margin-left: 5px;
+    display: block;
+  }
+
+  .header {
+    padding: 3px 15px;
+    font-size: 1.2rem;
+  }
+
+  .d-col {
+    padding: 3px 5px;
+    text-align: center;
+    font-size: 2rem;
+  }
+}

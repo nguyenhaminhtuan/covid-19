@@ -1,0 +1,14 @@
+.spinner {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner svg {
+  animation: spin infinite 5s linear;
+}
+
+.spinner--full {
+  height: 80vh;
+}
